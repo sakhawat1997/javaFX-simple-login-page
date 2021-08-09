@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="683.0" prefWidth="973.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="689.0" prefWidth="441.0" style="-fx-background-color: #CD329E;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="199.0" prefHeight="55.0" prefWidth="441.0" text="Welcome to Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="169.0" fitWidth="107.0" layoutX="142.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@imge.jpeg"/>
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="userName" layoutX="684.0" layoutY="236.0" prefHeight="55.0" prefWidth="236.0" promptText="User Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="684.0" layoutY="319.0" prefHeight="55.0" prefWidth="236.0" promptText="Password">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="submit" layoutX="734.0" layoutY="425.0" mnemonicParsing="false" onAction="#loginCheck" prefHeight="43.0" prefWidth="118.0" style="-fx-background-color: #CD329E;" text="Submit" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="noticeButton" alignment="CENTER" layoutX="685.0" layoutY="387.0" prefHeight="25.0" prefWidth="236.0" textFill="#e00d37">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="497.0" layoutY="241.0" prefHeight="44.0" prefWidth="173.0" text="User Name:">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="529.0" layoutY="324.0" prefHeight="44.0" prefWidth="141.0" text="Password:">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
